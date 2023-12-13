@@ -5,7 +5,7 @@
 .bottom-5{bottom:1.25rem;}
 .right-5{right:1.25rem;}
 .grid{display:grid;}
-.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .min-h-screen{min-height:100vh;}
 .w-full{width:100%;}
 .flex{display:flex;}
@@ -31,3 +31,6 @@
 .\[\&_button\]\:text-white button,
 .text-white{--un-text-opacity:1;color:rgb(255 255 255 / var(--un-text-opacity));}
 .shadow{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgb(0 0 0 / 0.1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgb(0 0 0 / 0.1));box-shadow:var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);}
+@media (min-width: 640px){
+.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+}
