@@ -13,7 +13,13 @@
 </head>
 
 <body>
+
     <div class="min-h-screen bg-gray-100">
+        <div class="w-full bg-orange-500 text-white p-2 ">
+            <center hx-get="./komponen/footer.html" hx-trigger="load">
+
+            </center>
+        </div>
         <div class="p-5">
             <div class="aplikasi" @vue:mounted="mounted">
                 <div class="grid grid-cols-4 gap-5">
@@ -49,7 +55,8 @@
                 }).mount('.aplikasi')
             </script>
         </div>
-        <div class="fixed bottom-5 right-5">
+
+        <div class="fixed bottom-5 right-5 ">
             <div class="aplikasi-tombol" @vue:mounted="mounted">
                 <center>
                     <div class="text-sm font-bold">F2</div>

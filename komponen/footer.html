@@ -1,0 +1,64 @@
+<div class="katalog truncate">
+    <span v-for="x, n in data.sort((a, b) => a.teks > b.teks ? 1 : -1)">
+        <span v-if="n != 0">&bull;</span>
+        <a class="text-sm" :href="x.link" target="_blank">{{x.teks}}</a>
+    </span>
+</div>
+<script>
+    PetiteVue.createApp({
+        data: [
+            {
+                link: "https://simple-uuid-bb987f28-fb6d-4ab2-8666-f4e79d9d11a2.vercel.app/",
+                teks: "Simple UUID"
+            },
+            {
+                link: "https://katalogzen.vercel.app/",
+                teks: "Katalog Zen"
+            },
+            {
+                link: "https://mufrodat.vercel.app/",
+                teks: "Mufrodat"
+            },
+            {
+                link: "https://digimart.co.id/job/mzaini30/template-blogspot-linktree/",
+                teks: "Template Blogspot Linktree"
+            },
+            {
+                teks: "Skip YouTube Ads",
+                link: "https://digimart.co.id/job/mzaini30/auto-klik-skip-iklan-youtube/"
+            },
+            {
+                link: "https://digimart.co.id/job/mzaini30/klik-kanan-auto-translate/",
+                teks: "Klik Kanan, Auto Translate"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/memilih-saham/anihbgidkfedmceeiglfoghmjhpiekpk?hl=id",
+                teks: "Memilih Saham"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/writing-arabic/kjkmigffjnmbmoahcpdljdeefagcdhda?hl=id",
+                teks: "Writing Arabic"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/simple-note/chhigpkimenmfjpncdjopjgodjbbfojo?hl=id",
+                teks: "Simple Note"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/organize-jobs/aahdncdlbgfmfegdgaoaaimojkoebjff?hl=id",
+                teks: "Organize Jobs"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/get-ayat/achedfbipgbnbdaioidhaameiocghffh?hl=id",
+                teks: "Get Ayat"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/mail-merge/oeecndgbllcejkbggfmgcmepglcbnkmk?hl=id",
+                teks: "Mail Merge"
+            },
+            {
+                link: "https://chromewebstore.google.com/u/5/detail/penilaian-hadits/dajgfhoknfoiiokkpnjhpaahmbblimfp?hl=id",
+                teks: "Penilaian Hadits"
+            }
+        ]
+    }).mount(".katalog")
+</script>
