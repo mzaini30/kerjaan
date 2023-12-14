@@ -7,7 +7,6 @@
 .grid{display:grid;}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .min-h-screen{min-height:100vh;}
-.w-full{width:100%;}
 .flex{display:flex;}
 .justify-between{justify-content:space-between;}
 .gap-5{gap:1.25rem;}
@@ -18,9 +17,7 @@
 .bg-gray-100{--un-bg-opacity:1;background-color:rgb(243 244 246 / var(--un-bg-opacity));}
 .bg-gray-500{--un-bg-opacity:1;background-color:rgb(107 114 128 / var(--un-bg-opacity));}
 .bg-green-500{--un-bg-opacity:1;background-color:rgb(34 197 94 / var(--un-bg-opacity));}
-.bg-orange-500{--un-bg-opacity:1;background-color:rgb(249 115 22 / var(--un-bg-opacity));}
 .bg-white{--un-bg-opacity:1;background-color:rgb(255 255 255 / var(--un-bg-opacity));}
-.p-2{padding:0.5rem;}
 .p-5{padding:1.25rem;}
 .\[\&_button\]\:px-4 button{padding-left:1rem;padding-right:1rem;}
 .\[\&_button\]\:py-2 button{padding-top:0.5rem;padding-bottom:0.5rem;}
@@ -28,8 +25,7 @@
 .\[\&_button\]\:text-sm button,
 .text-sm{font-size:0.875rem;line-height:1.25rem;}
 .font-bold{font-weight:700;}
-.\[\&_button\]\:text-white button,
-.text-white{--un-text-opacity:1;color:rgb(255 255 255 / var(--un-text-opacity));}
+.\[\&_button\]\:text-white button{--un-text-opacity:1;color:rgb(255 255 255 / var(--un-text-opacity));}
 .shadow{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgb(0 0 0 / 0.1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgb(0 0 0 / 0.1));box-shadow:var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);}
 @media (min-width: 640px){
 .sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
